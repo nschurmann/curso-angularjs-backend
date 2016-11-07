@@ -1,0 +1,41 @@
+{
+  "name": "CursoAngularJS",
+  "version": "1.0.0",
+  "description": "Curso AngularJS Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "prestart": "tsc",
+    "start": "node dist/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nschurmann/curso-angularjs-backend.git"
+  },
+  "author": " <nicolas.schurmann@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/nschurmann/curso-angularjs-backend.git",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "sinon": "^1.17.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "composable-middleware": "^0.3.0",
+    "compression": "^1.6.1",
+    "connect-livereload": "^0.5.4",
+    "cookie-parser": "^1.4.1",
+    "errorhandler": "^1.4.3",
+    "express": "^4.13.4",
+    "express-jwt": "^3.4.0",
+    "jsonwebtoken": "^6.2.0",
+    "lodash": "^4.11.2",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.4.14",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pug": "^0.1.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
