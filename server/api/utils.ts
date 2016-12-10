@@ -43,8 +43,10 @@ export const handleError = (res: express.Response, statusCode?: number) => {
 }
 
 export const handleProperty = (res: express.Response, userId: string) =>
-  (entity: {createdBy: string}) => {
-    if (entity.createdBy !== userId) {
+  (entity: {user: string}) => {
+    if (entity.user !== userId) {
       res.status(404).send('Entity not found.')
     }
+
+    return entity
   }

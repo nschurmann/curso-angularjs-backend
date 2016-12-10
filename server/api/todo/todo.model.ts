@@ -1,6 +1,6 @@
 import mongoose = require('mongoose')
 mongoose.Promise = require('bluebird')
-import {Schema} from 'mongoose'
+import { Schema } from 'mongoose'
 
 
 export interface ITodo extends mongoose.Document {
@@ -8,10 +8,10 @@ export interface ITodo extends mongoose.Document {
   completed: boolean
 }
 
-const ParkingSchema = new Schema({
+const TodoSchema = new Schema({
   desc: String,
   completed: Boolean,
-  createdBy: { type: Schema.Types.ObjectId, ref: 'User' }
+  user: String,
 })
 
-export const Model = mongoose.model<ITodo>('Parking', ParkingSchema)
+export const Model = mongoose.model<ITodo>('Todo', TodoSchema)
