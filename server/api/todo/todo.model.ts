@@ -5,12 +5,12 @@ import { Schema } from 'mongoose'
 
 export interface ITodo extends mongoose.Document {
   desc: string,
-  completed: boolean
+  completado: boolean
 }
 
 const TodoSchema = new Schema({
   desc: String,
-  completed: Boolean,
+  completado: Boolean,
   user: String,
 })
 
